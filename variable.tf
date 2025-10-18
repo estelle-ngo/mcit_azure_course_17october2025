@@ -38,3 +38,7 @@ variable "environment"{
   type=string
   default="production"
 }
+variable "resource_group_name"{
+  type=string
+  default="mcitrgestelle"
+}
