@@ -42,4 +42,30 @@ variable "resource_group_name"{
   type=string
   default="mcitrgestelle"
 }
+
+
+
+
+
+
+variable "vm_names" {
+  description = "Liste des noms de VMs à créer"
+  type        = list(string)
+  default     = ["vm1", "vm2", "vm3", "vm4", "vm5"]
+}
+
+variable "admin_username" {
+  type    = string
+  default = "azureuser"
+}
+
+variable "admin_password" {
+  type    = string
+  default = "P@ssword1234!"
+}
+
+variable "vm_size" {
+  type    = string
+  default = "Standard_B1s"
+}
 #AZE
