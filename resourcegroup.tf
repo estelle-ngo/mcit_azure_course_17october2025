@@ -27,7 +27,5 @@ resource "azurerm_virtual_network" "rgoctobermcit" {
     security_group   = azurerm_network_security_group.rgoctobermcit.id
   }
 
-  tags = {
-    environment = "Production"
-  }
+  
 }
